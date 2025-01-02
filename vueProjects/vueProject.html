@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="app">
+        <button @click="increment">{{ msg }}</button>
+    </div>
+    <script>
+        // const createApp = Vue
+        // const ref = Vue
+        const {createApp, ref} = Vue
+
+        createApp( {
+            setup() {
+                const msg = ref(0)
+                const increment = () => {
+                    msg.value++
+                }
+                return {
+                    msg, increment
+                }
+            }
+        }
+        ).mount('#app')
+
+    </script>
 </body>
 </html>
