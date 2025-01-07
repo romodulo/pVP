@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vueProjects/vueProject.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vue</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="flex h-dvh items-center">
+            <div class="flex justify-center items-center w-full h-96 flex-col gap-y-2.5">
+                <button @click="increment" class="w-32 btn btn-outline btn-info">
+                    <!-- <p class="flex w-full h-full justify-center items-center">{{ msg }}</p> -->
+                     {{msg}}
+                </button>
+
+                <button class="w-32 h-auto py-4 btn btn-outline btn-info" v-for = "item in newItems">
+                    {{item.selecta}}
+                </button>
+            </div>
+        </div>
+        <!-- <ul>
+            <li v-for="item in newItems">{{item}}</li>
+        </ul> -->
+    </div>
+    <script src="vueP2.js"></script>
+</body>
+</html>
