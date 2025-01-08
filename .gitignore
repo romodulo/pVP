@@ -1,3 +1,4 @@
-/vueProjects/another.html
-/vueProjects/vueProject.vue
-/vueProjectTest/*
+vueProjects/another.html
+vueProjects/vueProject.vue
+vueProjectTest/*
+GitIgnoreFolder/*

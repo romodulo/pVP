@@ -24,5 +24,4 @@ createApp( {
             msg, increment, newItems, toggle
         }
     }
-}
-).mount('#app')
+}).mount('#app')
